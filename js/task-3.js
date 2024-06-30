@@ -2,11 +2,7 @@ const profile = {
   username: 'Jacob',
   playTime: 300,
   changeUsername(newName) {
-    for (const name of this.username) {
-      if (this.username !== name.username) {
-        this.username = newName;
-      }
-    }
+    this.username = newName;
   },
   updatePlayTime(hours) {
     this.playTime += hours;
